@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Overlay for full-screen meme display -->
+<div id="overlay" style="display: none;">
+    <img id="overlayImage" src="" alt="Meme">
+</div>
+
+    <!-- Title section -->
+    <div id="title">
+        <h1>Investment Game</h1>
+    </div>
+    
+    <!-- Game question box -->
+    <div id="game">
+        <!-- First Question -->
+        <div id="firstQuestion">
+            <label for="name">Enter your first name:</label>
+            <input type="text" id="name">
+            <button onclick="checkAuthorization()">Start Game</button>
+        </div>
+        
+        <!-- Second Question (Hidden by default) -->
+        <div id="questionSection" style="display: none;">
+            <label for="investment">What is the best investment fund in the world?</label>
+            <input type="text" id="investment">
+            <button onclick="checkAnswer()">Submit</button>
+        </div>
+
+        <!-- Result section -->
+        <div id="result"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
